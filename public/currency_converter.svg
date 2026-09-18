@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="450" viewBox="0 0 800 450">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="50%" stop-color="#1e293b"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+    <linearGradient id="card" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b"/>
+      <stop offset="100%" stop-color="#334155"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#3b82f6"/>
+      <stop offset="100%" stop-color="#10b981"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="450" fill="url(#bg)"/>
+  <rect x="80" y="50" width="640" height="350" rx="16" fill="url(#card)" stroke="#475569" stroke-width="1.5"/>
+  <text x="120" y="105" fill="#f8fafc" font-family="system-ui, -apple-system, sans-serif" font-size="24" font-weight="700">Currency Converter</text>
+  <text x="120" y="132" fill="#94a3b8" font-family="system-ui, -apple-system, sans-serif" font-size="14">Real-time exchange rate calculations &amp; responsive UI</text>
+  
+  <rect x="120" y="165" width="230" height="85" rx="10" fill="#0f172a" stroke="#334155"/>
+  <text x="140" y="195" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="12">Amount &amp; Base</text>
+  <text x="140" y="228" fill="#ffffff" font-family="system-ui, sans-serif" font-size="20" font-weight="600">$ 1,000 USD</text>
+  
+  <circle cx="385" cy="207" r="20" fill="url(#accent)"/>
+  <path d="M378 204 L392 204 M388 200 L392 204 L388 208 M392 211 L378 211 M382 207 L378 211 L382 215" stroke="#ffffff" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  
+  <rect x="420" y="165" width="230" height="85" rx="10" fill="#0f172a" stroke="#334155"/>
+  <text x="440" y="195" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="12">Converted To</text>
+  <text x="440" y="228" fill="#10b981" font-family="system-ui, sans-serif" font-size="20" font-weight="600">₹ 83,450 INR</text>
+  
+  <rect x="120" y="275" width="530" height="85" rx="10" fill="#0f172a" stroke="#334155"/>
+  <text x="140" y="308" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="12">Exchange Rate Data</text>
+  <text x="140" y="338" fill="#38bdf8" font-family="system-ui, sans-serif" font-size="16" font-weight="600">1 USD = 83.450 INR</text>
+  <text x="500" y="325" fill="#10b981" font-family="system-ui, sans-serif" font-size="13" font-weight="500">● Live Rates API</text>
+</svg>

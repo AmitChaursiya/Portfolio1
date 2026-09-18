@@ -22,6 +22,7 @@ function getDeviconSlug(skill: string) {
     "python": "python",
     "c/c++": "cplusplus",
     "java": "java",
+    "core java": "java",
     "javascript": "javascript",
     "react.js": "react",
     "react": "react",
@@ -33,10 +34,21 @@ function getDeviconSlug(skill: string) {
     "supabase": "supabase",
     "postgresql": "postgresql",
     "mysql": "mysql",
+    "sql": "mysql",
     "aws": "amazonwebservices-plain-wordmark",
     "rest apis": "postman",
     "linux": "linux",
     "gemini api": "google",
+    "html5": "html5",
+    "css3": "css3",
+    "vscode": "vscode",
+    "vs code": "vscode",
+    "intellij idea": "intellij",
+    "intellij": "intellij",
+    "github": "github",
+    "eclipse ide": "eclipse",
+    "eclipse": "eclipse",
+    "selenium": "selenium",
   };
 
   return deviconMap[normalized] || normalized.replace(/[^a-z0-9]/g, "");
@@ -60,7 +72,7 @@ function getSocialIconComponent(iconName: string) {
 }
 
 export default function Page() {
-  const githubUsername = DATA.contact.social.GitHub.url.split("/").pop() || "neeraj-ch7";
+  const githubUsername = DATA.contact.social.GitHub.url.split("/").pop() || "AmitChaursiya";
 
   return (
     <main className="flex flex-col min-h-[100dvh] space-y-10 px-4 sm:px-6 md:px-8">
@@ -89,10 +101,10 @@ export default function Page() {
             <div className="space-y-3">
               <h2 className="text-2xl sm:text-3xl md:text-4xl leading-tight tracking-tight">
                 <span className="font-light text-foreground/80">Building </span>
-                <span className="italic font-extrabold text-foreground">AI-integrated</span>
+                <span className="italic font-extrabold text-foreground">Java</span>
                 <span className="font-black text-foreground"> & </span>
-                <span className="italic font-black text-foreground">Full Stack</span>
-                <span className="font-light text-foreground/80"> systems that </span>
+                <span className="italic font-black text-foreground">Web</span>
+                <span className="font-light text-foreground/80"> applications that </span>
                 <span className="font-black relative inline-block bg-gradient-to-r from-emerald-600 via-blue-600 to-purple-600 bg-clip-text text-transparent">
                   solve real problems.
                   <div className="absolute -bottom-2 left-0 h-0.5 w-full bg-gradient-to-r from-emerald-500 via-blue-500 to-purple-500"></div>
