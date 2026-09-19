@@ -81,8 +81,17 @@ export default function Page() {
           <BlurFade delay={BLUR_FADE_DELAY}>
             <div className="flex items-center justify-between">
               <div className="flex items-center gap-4">
-                <Avatar className="size-24 border-2">
-                  <AvatarImage src={DATA.avatarUrl} alt={DATA.name} />
+                <Avatar className="size-24 sm:size-28 border-2 shadow-sm">
+                  <AvatarImage
+                    src={DATA.avatarUrl}
+                    alt={DATA.name}
+                    className="object-cover w-full h-full"
+                    style={{
+                      objectPosition: "50% 38%",
+                      transform: "scale(1.75)",
+                      transformOrigin: "50% 38%",
+                    }}
+                  />
                   <AvatarFallback>{DATA.initials}</AvatarFallback>
                 </Avatar>
                 <div>
@@ -237,6 +246,7 @@ export default function Page() {
                   <BlurFade key={skill} delay={BLUR_FADE_DELAY * 10 + id * 0.04}>
                     <div className="flex flex-col items-center justify-center gap-2 p-3 rounded-lg border border-border/40 bg-muted/20 hover:bg-muted/50 transition-all duration-200 shadow-sm">
                       <div className="w-8 h-8 flex items-center justify-center">
+                        {/* eslint-disable-next-line @next/next/no-img-element */}
                         <img
                           src={`https://cdn.jsdelivr.net/gh/devicons/devicon/icons/${slug}/${slug}-original.svg`}
                           alt={skill}
@@ -374,6 +384,7 @@ export default function Page() {
           </BlurFade>
           <BlurFade delay={BLUR_FADE_DELAY * 20}>
             <div className="space-y-2">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
                 src={`https://ghchart.rshah.org/10b981/${githubUsername}`}
                 alt="GitHub Contribution Chart"

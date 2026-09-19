@@ -7,7 +7,7 @@ import { Poppins } from "next/font/google";
 import dynamic from "next/dynamic";
 import "./globals.css";
 
-const LiquidEther = dynamic(() => import("@/components/LiquidEther"), {
+const SplashCursor = dynamic(() => import("@/components/SplashCursor"), {
   ssr: false,
 });
 
@@ -67,25 +67,18 @@ export default function RootLayout({
           fontSans.variable
         )}
       >
-        <div className="fixed inset-0 pointer-events-none z-0 overflow-hidden w-full h-full">
-          <LiquidEther
-            colors={["#FF1493", "#7F00FF", "#00D4FF", "#00FF99", "#FFD700"]}
-            mouseForce={25}
-            cursorSize={120}
-            isViscous
-            viscous={30}
-            iterationsViscous={32}
-            iterationsPoisson={32}
-            resolution={0.6}
-            isBounce={false}
-            autoDemo
-            autoSpeed={0.6}
-            autoIntensity={2.5}
-            takeoverDuration={0.25}
-            autoResumeDelay={2000}
-            autoRampDuration={0.6}
-          />
-        </div>
+        <SplashCursor
+          DENSITY_DISSIPATION={3.5}
+          VELOCITY_DISSIPATION={2}
+          PRESSURE={0.1}
+          CURL={3}
+          SPLAT_RADIUS={0.2}
+          SPLAT_FORCE={6000}
+          COLOR_UPDATE_SPEED={10}
+          SHADING
+          RAINBOW_MODE={false}
+          COLOR="#A855F7"
+        />
         <ThemeProvider attribute="class" defaultTheme="light">
           <TooltipProvider delayDuration={0}>
             <div className="relative z-10">

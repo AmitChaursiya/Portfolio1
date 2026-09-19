@@ -74,7 +74,7 @@ export const DATA = {
       school: "Babu Banarasi Das University",
       href: "https://bbdu.ac.in",
       degree: "Bachelor of Engineering in Computer Science — CGPA: 7.57/10",
-      logoUrl: "/bbdu.svg",
+      logoUrl: "/bbdu_logo.webp",
       start: "Aug 2021",
       end: "2025",
     },
@@ -196,7 +196,7 @@ export const DATA = {
       location: "BBD University",
       description:
         "Demonstrated OOP principles in Java. Applied encapsulation to secure user data (like PIN and balance) within classes such as BankAccount, exposing access only through public methods like withdraw(), deposit(), or checkBalance().",
-      image: "/bbdu.svg",
+      image: "/bbdu_logo.webp",
       links: [],
     },
     {
@@ -205,7 +205,7 @@ export const DATA = {
       location: "BBD University",
       description:
         "Delivered a technical presentation on Artificial Intelligence (AI), explaining key concepts, modern architectures, and real-world applications.",
-      image: "/bbdu.svg",
+      image: "/bbdu_logo.webp",
       links: [],
     },
   ],
